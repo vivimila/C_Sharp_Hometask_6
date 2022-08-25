@@ -5,7 +5,7 @@
 // 1, -7, 567, 89, 223-> 3
 
 Console.Write("Введите М-чисел элементов массива: ");
-int number = int.Parse(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 int count = 0;
 if (number == 0)
 
@@ -22,7 +22,7 @@ int[] GetArray(int size)
     for (int i = 0; i < size; i++)
     {
         Console.Write($"Введите число {i + 1}: ");
-        array[i] = int.Parse(Console.ReadLine());
+        array[i] = Convert.ToInt32(Console.ReadLine());
     }
     return array;
 }
