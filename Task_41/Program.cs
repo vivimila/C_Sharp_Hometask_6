@@ -4,8 +4,8 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-Console.Write("Введите число элементов массива: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите М-чисел элементов массива: ");
+int number = int.Parse(Console.ReadLine());
 int count = 0;
 if (number == 0)
 
@@ -18,11 +18,11 @@ int[] GetArray(int size)
 
 {
     int[] array = new int[size];
-    Random rnd = new Random();
-
+   
     for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(-20, 30);
+        Console.Write($"Введите число {i + 1}: ");
+        array[i] = int.Parse(Console.ReadLine());
     }
     return array;
 }
